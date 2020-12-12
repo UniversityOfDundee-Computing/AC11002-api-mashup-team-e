@@ -1,0 +1,32 @@
+html body{
+    background-color: #0ac9eb;
+    color: #ffffff;
+    font-size: x-large;
+    
+  }
+
+  h1
+  {
+      font-size: 60px;
+    text-shadow: 2px 2px #000000;
+  }
+  h5
+  {
+    font-size: 30px;
+    
+  }
+
+  .nav{
+    color: #0ac9eb;
+  }
+  body {
+    background-image: url("map.jpg");
+    background-color: #cccccc;
+   }
+
+  footer
+  {
+    background-color: #0ac9eb;
+    color: #ffffff;
+  }
+  

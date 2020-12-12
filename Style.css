@@ -16,9 +16,7 @@ html body{
     
   }
 
-  .nav{
-    color: #0ac9eb;
-  }
+  
   body {
     background-image: url("map.jpg");
     background-color: #cccccc;
@@ -29,4 +27,17 @@ html body{
     background-color: #0ac9eb;
     color: #ffffff;
   }
+  .card_contactus
+  {
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #b3d1ff;
+  }
+  .aboutUs_Details
+  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #b3d1ff;
+  }
+  
   

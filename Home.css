@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Sanchez:ital@0;1&display=swap');
+
 html body{
   background-color: #D0F9FF;
   color: #5bc0de;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1,h5 {
+font-family: 'Sanchez', sans-serif !important;
 }

@@ -11,21 +11,22 @@ document.getElementById("eventsButton").addEventListener("click", function() {
 
 
   function getEvent(events){
-
+    $.ajax({
+      type:"GET",
+      url:"https://app.ticketmaster.com/discovery/v2/events/"+name+"size=1&apikey=akthNr9MQuBumG3nChjDn4HAnIAve7io",
+      async:true,
+      dataType: "json",
+      success: function(json) {
+                  console.log(json);
+                  // Parse the response.
+                  // Do other things.
+               },
+      error: function(xhr, status, err) {
+                  // This time, we do not end up here!
+               }
+    });
     console.log("hello");
 
-    fetch("https://app.ticketmaster.com/discovery/v2/events.json?events/{"+name+"}size=1&apikey=akthNr9MQuBumG3nChjDn4HAnIAve7io")
-      .then((resp) => resp.json())
-      .then(function(city) {
-        console.log(city);
-
-        console.log(events);
-
-
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
 
   }
 

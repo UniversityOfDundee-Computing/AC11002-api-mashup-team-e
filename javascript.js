@@ -20,7 +20,7 @@ document.getElementById("eventsButton").addEventListener("click", function() {
           .then(function(data) {
             console.log(data);
 
-            var city = name;
+            var city = data._embedded.events[0]._embedded.venues[0].city.name;
             getWeather(city);
 
           })
@@ -34,6 +34,7 @@ document.getElementById("eventsButton").addEventListener("click", function() {
 
 
   function getWeather(city){
+
 
     var url = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=e88914d61cac7511590118289158512a";
 

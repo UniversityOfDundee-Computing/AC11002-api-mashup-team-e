@@ -1,0 +1,8 @@
+{
+  "name": "Weather API",
+  "short_name": "Weather",
+  "display": "fullscreen",
+  "theme_color": "#5bc0de",
+  "background_color": "#D0F9FF",
+  "start_url": "https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/index.html"
+}

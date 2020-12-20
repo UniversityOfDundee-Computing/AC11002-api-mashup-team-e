@@ -1,11 +1,13 @@
 
 
+
 window.onload = getEvent(events);
 
 document.getElementById("eventsButton").addEventListener("click", function() {
     localStorage.setItem('events', document.getElementById("events").value)
     var nme = localStorage.getItem('events')
     console.log("The event is called: " + nme);
+    getEvent(events);
   })
 
 
@@ -14,6 +16,7 @@ document.getElementById("eventsButton").addEventListener("click", function() {
 
     console.log("hello");
     var nme = localStorage.getItem('events')
+
     console.log(nme);
         fetch("https://app.ticketmaster.com/discovery/v2/events.json?keyword="+nme+"&apikey=akthNr9MQuBumG3nChjDn4HAnIAve7io")
           .then((resp) => resp.json())

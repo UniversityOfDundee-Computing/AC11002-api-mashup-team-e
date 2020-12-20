@@ -7,7 +7,10 @@ var urlsToCache = [
   'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/LastPage.html',
   'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/manifest.json',
   'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/home.css',
-  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/css.css'
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/Main_Style.css',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/about-us.jpg',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/map.jpg',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/javascript.js'
 ];
 
 self.addEventListener('install', function(event) {

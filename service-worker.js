@@ -1,13 +1,13 @@
 var CACHE_NAME = 'simple-PWA-localStorage';
 var urlsToCache = [
   './',
-  './index.html',
-  './AboutUs.html',
-  './API-Page.html',
-  './LastPage.html',
-  './manifest.json',
-  './home.css',
-  './css.css'
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/index.html',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/AboutUs.html',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/API-Page.html',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/LastPage.html',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/manifest.json',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/home.css',
+  'https://universityofdundee-computing.github.io/AC11002-api-mashup-team-e/css.css'
 ];
 
 self.addEventListener('install', function(event) {

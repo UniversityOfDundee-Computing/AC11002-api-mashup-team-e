@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -9,9 +8,8 @@
 
   <!-- Material Design for Bootstrap fonts and icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-  <link rel="stylesheet" href="css.css">
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="Main_Style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title>Weather</title>
 </head>
 
@@ -30,13 +28,16 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"  href="API-Page.html">Weather and Events</a>
+              <a class="nav-link active" aria-current="page" href="API-Page.html">Weather and Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="LastPage.html">Other</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://www.ticketmaster.co.uk/%22%3Eticketmaster">TicketMaster</a>
             </li>
           </ul>
         </div>
@@ -48,50 +49,55 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-<div class="container">
-  <div class="row mt-5">
-    <div class="col">
-      <h1 class="text-center text-white">Welcome to the weather application</h1>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h1 class="text-center text-white">Welcome to the weather application</h1>
+      </div>
     </div>
-  </div>
-  <div class="row mt-5 px-5">
-    <div class="col px-5" id="selectCityBox">
-      <div class="container mb-2 bg-light rounded">
-      <div class="form-group">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="events" aria-describedby="Event" placeholder="Event Name...">
-        <small id="events" class="form-text text-muted">What event would you like to go to?</small>
+    <div class="row mt-5 px-5">
+      <div class="col px-5" id="selectCityBox">
+        <div class="container mb-2 bg-light rounded">
+          <div class="form-group">
+            <label for="inputCity"></label>
+            <input type="text" class="form-control" id="events" aria-describedby="Event" placeholder="Event Name...">
+            <small id="events" class="form-text text-muted">What event would you like to go to?</small>
+          </div>
         </div>
+        <button type="submit" class="btn btn-info btn-lg active text-white" id="eventsButton">Submit</button>
+
       </div>
-      <button type="submit" class="btn btn-info btn-lg active" id="eventsButton">Submit</button>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <h2 class="text-center text-white ">The current weather is: <span id="weather"></span></h2>
+      </div>
 
     </div>
   </div>
-  <div class="row mt-5">
-    <div class="col">
-      <p class="h2 text-center text-white ">The current weather is: <span id="weather"></span></p>
+
+  <div class="jumbotron jumbotron-fluid text-center mt-5">
+    <div class="container">
+      <h5 class="textstyle1">Link to download as a PWA:<br><br> <button class="btn btn-info btn-lg text-white">Download</button></h5>
     </div>
+  </div>
+  <div class="container mb-2 bg-light rounded text-center">
 
   </div>
-</div>
-<footer class = "bg-light fixed-bottom px-5">
-  <div class = "container-fluid">
-    <div class = "row">
-      <div class = "col-sm-5">
-        <!-- <p class = "textstyle1">a link to download to b and app<br><br> <button class="btn btn-primary btn-lg ">Download</button></p> -->
-      </div>
-      <div class = "col-sm-7">
-        <p class = "textstyle1">Designed by Elliot Scott, Finn Hagan, Pawanpreet Singh, Harry Inglis</p>
-  </div>
-  </div>
-</footer>
+
+
+  <footer class="bg-info fixed-bottom text-center">
+    <div class="container-fluid">
+      <p class="textstyle1">© Pawanpreet Singh, Finn Hagan, Elliot Scott, Uwais Hussein, Harry Inglis. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
 
 
-<script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
 
 
 

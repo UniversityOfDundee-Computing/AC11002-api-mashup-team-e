@@ -39,7 +39,7 @@ document.getElementById("eventsButton").addEventListener("click", function() {
   function getWeather(city){
 
 
-    var url = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=e88914d61cac7511590118289158512a";
+    var url = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=e88914d61cac7511590118289158512a";
 
 
     fetch(url)
